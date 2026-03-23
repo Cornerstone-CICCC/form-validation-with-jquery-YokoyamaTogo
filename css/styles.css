@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #525252;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  padding: 200px 50px 0;
+  height: 100vw;
+  width: 50%;
+  background-color: orange;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form label {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.form .alert {
+  color: red;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 3px solid red;
+}
+
+.form .count.is-limit {
+  color: red;
+}
+
+.form .form-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form .count {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.form button {
+  background-color: brown;
+  padding: 1px;
+  display: inline-block;
+  width: 110px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#humming {
+  background-color: orange;
+  border: none;
+  border-bottom: 2px solid black;
+  margin-bottom: 30px;
+  padding: 10px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#humming:focus {
+  outline: none;
+}
+
+.humming-text {
+  border: 3px solid black;
+  height: calc(1.5rem * 2 + 20px);
+  line-height: 1.5rem;
+  margin-top: 20px;
+  padding: 2px 8px;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+}
+
+.humming-text::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: calc(1.5rem + 10px);
+  border-top: 1px solid black;
+  pointer-events: none;
+}
